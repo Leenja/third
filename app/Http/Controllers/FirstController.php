@@ -18,5 +18,6 @@ class FirstController extends Controller
         unset($decode_file[$id - 1]);
         file_put_contents('D:\data.json' , json_encode(array_values($decode_file)));
         return response()->json(['message' => 'product has been deleted successfully']);
+        return 'hello';
     }
 }
